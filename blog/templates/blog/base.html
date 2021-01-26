@@ -12,9 +12,8 @@
     <body>
         <div class="page-header">
             {% if user.is_authenticated %}
-                {{ user.username }}
-                <a href="{% url 'logout' %}" class="top-menu">Log Out</a>
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'logout' %}" class="top-menu">Log Out</a>
             {% else %}
                 <a href="{% url 'login' %}" class="top-menu">Log In</a>
             {% endif %}

@@ -143,3 +143,4 @@ DATABASES['default'].update(db_from_env)
 django_heroku.settings(locals())
 
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
