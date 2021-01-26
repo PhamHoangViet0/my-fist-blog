@@ -1,1 +1,1 @@
-web: gunicorn hello:app
+web: gunicorn some-blog-00.wsgi --log-file -
